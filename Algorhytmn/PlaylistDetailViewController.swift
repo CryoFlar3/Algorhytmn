@@ -1,25 +1,30 @@
 //
-//  ViewController.swift
+//  PlaylistDetailViewController.swift
 //  Algorhytmn
 //
-//  Created by Nyjel Dukes on 5/2/15.
+//  Created by Nyjel Dukes on 5/3/15.
 //  Copyright (c) 2015 Computer Mentors. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlaylistDetailViewController: UIViewController {
 
+    @IBOutlet weak var buttonPressLabel: UILabel!
+    var segueLabelText: String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        buttonPressLabel.text = segueLabelText
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
-
